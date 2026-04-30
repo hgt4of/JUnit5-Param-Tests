@@ -1,0 +1,19 @@
+ТЕСТ-КЕЙС: Регистрация с разными доменами email
+Автотест: RegistrationTest (CSV source)
+
+ПРЕДУСЛОВИЕ:
+1. Браузер открыт
+2. Переход на https://demoqa.com/automation-practice-form
+
+ШАГИ:
+1. Для каждого домена из набора {gmail.com, yandex.ru, mail.ru}:
+   1.1. Заполнить First Name: "Test"
+   1.2. Заполнить Last Name: "User"
+   1.3. Заполнить Email: test.user@[домен]
+   1.4. Выбрать пол Male
+   1.5. Заполнить Mobile: "1234567890"
+   1.6. Нажать кнопку Submit
+
+ОЖИДАЕМЫЙ РЕЗУЛЬТАТ:
+- Появляется модальное окно с заголовком "Thanks for submitting the form"
+- Модальное окно содержит заполненные данные
